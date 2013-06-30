@@ -1,0 +1,15 @@
+_welcome:
+    pattern: /
+    defaults: { _controller: NvaFontBundle:Default:welcome }
+nva_client_home:
+    pattern: /home
+    defaults: { _controller: NvaFontBundle:Default:home }    
+nva_font_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: NvaFontBundle:Default:index }
+nva_font_metro:
+    pattern:  /metro/{name}
+    defaults: { _controller: NvaFontBundle:Default:metro }
+nva_font_demohomepage:
+    pattern:  /demohello/{name}
+    defaults: { _controller: NvaFontBundle:Demo:indexDemo }
