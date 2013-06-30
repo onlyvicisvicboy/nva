@@ -1,0 +1,286 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td {
+	margin: 0; 
+	padding: 0;
+}
+a{ 	
+	color:#808080;
+	text-decoration:none;
+	}
+a:hover{ 
+	text-decoration:none;
+	color:#65b53e
+	}
+
+.clear{
+	clear:both;	
+}
+.active{color:#65b53e}
+.active a{color:#65b53e}
+.link-gray{color:#4c4c4c}
+.link-gray a {
+	color:#4c4c4c;
+	text-decoration:none;
+}
+.link-gray a:hover {
+	color:#0863bd;
+	text-decoration:none;
+}
+.link-green{color:#65b53e}
+.link-green a {
+	color:#65b53e;
+	text-decoration:none;
+}
+.link-green a:hover {
+	color:#65b53e;
+	text-decoration:underline;
+}
+.link-white{color:#ffffff}
+.link-white a {
+	color:#ffffff;
+	text-decoration:none;
+}
+.link-white a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+.clearfix:after {
+	visibility:hidden;
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+}
+img { border:none; }
+
+a:focus { outline: none; }
+/*
+ * default values
+ */
+ 
+h1 {
+	/*18px via YUI Fonts CSS foundation*/
+	font-size:25px;
+	color:#65b53e;
+	font-weight:normal;
+	margin:0;
+	line-height:27px
+}
+h2{
+	font-size:22px;
+	text-transform:none;
+	font-weight:normal;
+	line-height:27px
+}
+h3{
+	font-size:17px;
+	font-weight:normal;
+	color:#4c4c4c;
+	line-height:22px
+}
+
+
+abbr,acronym {
+	/*indicating to users that more info is available */
+	border-bottom:1px dotted #000;
+	cursor:help;
+} 
+em {
+	/*bringing italics back to the em element*/
+	font-style:italic;
+}
+blockquote,ul,ol,dl {
+	/*giving blockquotes and lists room to breath*/
+	margin:10px;
+}
+ol,ul,dl {
+	/*bringing lists on to the page with breathing room */
+	margin: 10px 0;
+	padding-left: 30px;
+}
+
+dl dd {
+	/*giving UL's LIs generated numbers*/
+	margin-left:10px;
+}
+th,td {
+	/*borders and padding to make the table readable*/
+	/*border:1px solid #000;*/
+	padding:5px;
+}
+th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:center;
+}
+caption {
+	/*coordinated marking to match cell's padding*/
+	margin-bottom:5px;
+	/*centered so it doesn't blend in to other content*/
+	text-align:center;
+}
+p,fieldset,table {
+	/*so things don't run into each other*/
+	margin-bottom:10px;
+}
+dl { margin: 10px 0; }
+dd { padding-left: 40px; }
+
+legend {
+	padding: 0 10px 0 10px;
+	background: #ffffff;
+}
+option { padding: 0 0 1px 5px; }
+input[type='hidden'] { display: none; }
+button,
+input[type='button'],
+input[type='submit'] {
+	padding: 2px 4px 2px 1px;
+	line-height: 100%;
+	font-family:Arial, Helvetica, sans-serif
+}
+
+label{
+	width:100px;
+	float:left;
+	margin-top:10px;
+	clear:both
+}
+input[type="text"]{ 
+	border:1px solid #d5d5d5;
+	height:28px;
+	width:230px;
+	padding:0 5px;
+	line-height:15px;
+	color:#808080;
+	font-size:14px;
+	float:left;
+	margin:6px 0;
+}
+textarea{
+	border:1px solid #d5d5d5;
+	width:360px;
+	height:90px;
+	margin:6px 0;
+	float:left;
+	padding:5px;
+	color:#808080;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:14px;
+}
+
+input[type='button']{
+	color:#ffffff;
+	padding:7px 35px;
+	clear:both;
+	float:left;
+	margin:8px 0 0 100px;
+	background:#65b53e;
+	border:0;
+	color:#ffffff;
+	font-size:16px;
+	cursor:pointer
+}
+.error{
+	background:#ffecec;
+	padding:1% 2%;
+	clear:both;
+	float:left;
+	margin:10px 0;
+	color:red;
+	width:96%	
+}
+.success{
+	background:#cfffd5;
+	padding:1% 2%;
+	clear:both;
+	float:left;
+	margin:10px 0;
+	color:#01b316;
+	width:96%	
+}
+
+.line-small {
+	margin: 25px 0;
+	display: block;
+	border-top:1px solid #eeeeee;
+	clear:both;
+	float:left;
+	width:100%
+}
+q { font-style: italic; }
+blockquote {
+	margin: 10px 0 10px 15px;
+	font-style: italic;
+	font-size: 130%
+}
+blockquote > *:first-child:first-letter { font-size: 150% }
+pre {
+	margin: 10px 0 10px 0px;
+	padding: 5px 0 5px 10px;
+	border: 1px dotted #aab4be;
+	border-left: 20px solid #b4b4b4;
+	background: #fafafa;
+	font-size: 90%;
+	color: #2E8B57;
+	font-family: "Courier New", Courier, monospace;
+	white-space: pre-wrap;
+}
+acronym, abbr {
+	border-bottom: 1px dashed #969696;
+	cursor: help;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+
+
+/*Style for Paging*/
+#paging {
+	display:block;
+	text-align:left;
+	height:22px;
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	float:right;
+	margin:10px 0 30px 0
+}
+
+#paging a:link, #paging a:visited{
+	padding:8px 10px;
+	margin-left:6px;
+	text-decoration:none;
+	background-color:#cfcfcf;
+	color:#4c4c4c;
+	width:22px;
+	font-weight:normal;
+}
+
+#paging a:hover {
+	background-color:#65b53f;
+	color:#ffffff;	
+}
+
+#paging .active_paging {
+	padding:8px 10px;
+	margin-left:6px;
+	text-decoration:none;
+	background-color:#65b53f;
+	color:#ffffff;
+	cursor:default;
+}
+
+#paging .disabled_paging {
+	padding:8px 10px;
+	text-decoration:none;
+	background-color:#F5F5F5;
+	color:#D7D7D7;
+	cursor:default;
+	margin-left:6px
+}
