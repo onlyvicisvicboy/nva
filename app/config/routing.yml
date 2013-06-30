@@ -1,0 +1,4 @@
+nva_font:
+    resource: "@NvaFontBundle/Resources/config/routing.yml"
+    prefix:   /
+
